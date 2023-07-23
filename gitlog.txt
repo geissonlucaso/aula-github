@@ -1,0 +1,4 @@
+e1ce612 Update blog.
+60b3ba5 Criada página de blog.
+a4ebcb5 Acrescentado valor das vendas.
+c913826 Criadas páginas index e vendas.
