@@ -1,0 +1,53 @@
+GitHub
+
+Configuração identificação Git.
+	> git config --global user.name "Geisson Oliveira"
+	> git config --global user.email "geissonlucaso@gmail.com"
+	> git config --list
+	
+Configurar chave SSH para o GitHub.
+	> ssh-keygen -t ed25519 -C "geissonlucaso@gmail"
+	- acessar a pasta e copiar a chave no GitHub
+	
+Salvar a primeira versão de um projeto.
+	> git init
+	> git add .
+	> git commit -m "message"
+	> git branch -M main
+	> git remote add origin
+	> git@github.com/geissonlucaso/repositorio.git
+	> git push -u origin main
+	
+Salvar modificação no projeto.
+	> git status
+	> git add .
+	> git commit -m "message"
+	> git push
+	
+Demo: Clonar e modificar um projeto.
+	> git clone git@github.com/usuario/repositorio.git
+	> git add .
+	> git commit -m "message"
+	> git push
+	
+Verificação do histórico de versões.
+	> git log
+	> git log --oneline
+	
+Git status
+	- modified, untracked, deleted
+	> git add <file_name>
+	> git reset  [limpa a area de stage]
+	
+Git diff
+	> git diff <file_name>
+	
+Git checkout
+	> git checkout <code_commit>
+	> git checkout main  [volta para o ultimo commit]
+	> git checkout HEAD~2
+	- Não é indicado fazer alterações ao fazer checkout. Caso aconteça:
+	> git reset
+	> git clean -df
+	> git checkout -- .
+	
