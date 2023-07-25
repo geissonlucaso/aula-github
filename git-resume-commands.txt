@@ -51,3 +51,56 @@ Git checkout
 	> git clean -df
 	> git checkout -- .
 	
+Arquivo .gitignore
+	- Arquivos que não devem ser adicionados no repositório.
+	
+Remover arquivos da area de stage.
+	> git status
+	> git reset
+	
+Desfazer modificações não salvas. [Desfazer um trabalho que não será mais necessário, por exemplo.]
+	> git status
+	> git reset
+	> git clean -df
+	> git checkout -- .
+	
+Editor Vim
+	[modo edição]
+	> i  
+	Sair salvando
+	> <ESC>
+	>:wq
+	Sair descartando tudo.
+	>:q!
+	
+Desfazer o último commit. [sem apagar as alterações contidas nele.]
+	> git status
+	> git reset --soft HEAD~1
+	> git reset
+	
+Deletar commits com as modificações nos arquivos [ação destrutiva - só é possível recuperar o que esta no repositório remoto. O que estiver apenas no repositório local será perdido.].
+	> git status
+	> git reset --hard HEAD~1
+	- para ir para um dado commit.
+	> git reset --hard <cod_commit>
+	
+Sincronizar com o repositório remoto.
+	> git pull origin main
+	
+Resolver push rejeitado.
+	> git pull <remote> <branch>
+	- Criar o commit do merge.
+	> git push
+	
+Resolvendo conflitos.
+	
+	
+Sobrescrever histórico no GitHub. [Ação destrutiva]
+	> git push -f origin main
+	
+Apontar o projeto para outro repositório remoto.
+	> git remote -v
+	> git remote set-url origin <link>
+	
+
+	
